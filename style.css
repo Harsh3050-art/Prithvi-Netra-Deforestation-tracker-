@@ -206,7 +206,7 @@ section p {
 /* === Responsive === */
 @media (max-width: 900px) {
   #case-studies {
-    padding: 25px;
+    padding:px;
   }
   .cs {
     font-size: 0.95em;
@@ -778,6 +778,7 @@ body {
     max-width: 400px; /* optional cap to prevent too large */
   }
 }
+
 
 
 
