@@ -1,0 +1,706 @@
+/* ================= BASIC PAGE STYLING ================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #1c1c1c; /* dark grey background */
+  color: white;
+  overflow-x: hidden; /* prevents sideways scrolling */
+}
+
+/* Prevent top, bottom, left, right overflow */
+html, body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* ================= HEADER ================= */
+header {
+  background: linear-gradient(90deg, #013220, #3e2723); /* dark green to soil brown */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 3px solid #458845;
+}
+
+#header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#logo img {
+  border: 2px solid #228b22;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #2e7d32;
+}
+
+#site-title h1 {
+  margin: 30px;
+  color: #e0e0e0;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* ================= NAVIGATION ================= */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c8e6c9;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #a5d6a7;
+  background-color: #2e7d32;
+  border-radius: 5px;
+}
+
+/* ================= HERO VIDEO ================= */
+#cut {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  border-bottom: 4px solid #3e2723;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 40px;
+  margin: 20px;
+  background-color: #2f2f2f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+section h1, section h2 {
+  color: #51a461;
+  text-shadow: 1px 1px 3px #000;
+}
+
+section p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* ================= IMAGES ROW ================= */
+.images-row {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.images-row img {
+  border-radius: 15px;
+  border: 2px solid #4caf50;
+  box-shadow: 0 0 10px #1b5e20;
+  transition: transform 0.4s ease;
+}
+.images-row img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= VIDEOS ROW ================= */
+.videos-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.videos-row video {
+  border-radius: 10px;
+  border: 2px solid #795548; /* soil brown */
+  box-shadow: 0 0 10px #2e2e2e;
+}
+
+/* ================= CASE STUDY SECTION ================= */
+#case-studies {
+  background: linear-gradient(to bottom, #2e4d2c, #3e3e3e);
+  padding: 40px 60px;
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 1850px;
+  overflow: hidden;
+}
+
+#case-studies h2 {
+  text-align: center;
+  color: #c5ffb3;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+#case-studies > p {
+  text-align: center;
+  color: #ddd;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+/* === Case Study Grid === */
+.case-study-space {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cs {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #a3b18a;
+  border-radius: 15px;
+  padding: 20px;
+  color: #f1f1f1;
+  height: 500px;
+  width: 350px;
+  font-size: 1em;
+  line-height: 1.6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.cs:hover {
+  transform: scale(1.02);
+  background: rgba(163, 177, 138, 0.15);
+}
+
+/* === Case Study Images === */
+.case-study-space img {
+  width: 400px;
+  max-width: 100%; 
+  height: 540px;
+  transform: translateY(10px);
+  margin-left: 15px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #a3b18a;
+  justify-self: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.case-study-space img:hover {
+  transform: scale(1.02);
+  background: rgba(163, 177, 138, 0.15);
+}
+
+/* === Responsive === */
+@media (max-width: 900px) {
+  #case-studies {
+    padding: 25px;
+  }
+  .cs {
+    font-size: 0.95em;
+  }
+  #case-studies h2 {
+    font-size: 1.6em;
+  }
+}
+
+/* ================= GRAPHS SECTION ================= */
+#graphs {
+  color: #e0e0e0;
+}
+
+#graphs h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #c5ffb3;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.graphs-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.chart-card {
+  background: linear-gradient(180deg, #2b2b2b, #1f1f1f);
+  border: 1px solid #4caf50;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 420px;
+}
+
+.chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 255, 100, 0.3);
+}
+
+.chart-card h3 {
+  color: #81c784;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-shadow: 0 0 1px #000;
+}
+
+.chart-card p {
+  font-size: 0.95rem;
+  color: #bdbdbd;
+  margin-bottom: 20px;
+}
+
+.highlight-data {
+  color: #ffcc80;
+  font-weight: bold;
+}
+
+.chart-wrapper {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  animation: fadeIn 1.2s ease;
+}
+
+/* === Animation for bar chart load === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Graph Layout */
+.wide-chart {
+  grid-column: span 2;
+  overflow-x: auto;
+}
+
+.narrow-chart {
+  grid-column: span 1;
+}
+
+@media (max-width: 768px) {
+  .graphs-container {
+    grid-template-columns: 1fr;
+  }
+  .wide-chart, .narrow-chart {
+    grid-column: span 1;
+  }
+  .chart-wrapper {
+    height: 350px;
+  }
+}
+
+/* ================= BUTTON ================= */
+button, .cta-button {
+  
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .cta-button:hover {
+  background-color: #43a047;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background-color: #263238;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  border-top: 3px solid #4caf50;
+}
+
+footer a {
+  color: #81c784;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #a5d6a7;
+}
+/* Global Styling and Color Variables */
+:root {
+    
+  
+    --text-color: #333333;
+    --primary-color-loss: #ff4d94; /* Bright Pink for loss data (Image 2) */
+    --secondary-color-loss: #c40062; /* Darker Pink for natural forest (Image 3) */
+    --primary-color-emissions: #ff6600; /* Orange for emissions data (Image 1) */
+    --rank-color: #ec7c9a; /* Color for rank numbers */
+    --grid-color: #e0e0e0;
+    --axis-color: #888888;
+    --font-family: 'Inter', sans-serif;
+}
+
+body {
+
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+/* --- Dashboard Layout (Grid) --- */
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.chart-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    display: flex;
+   margin-top: 20px;
+    flex-direction: column;
+}
+
+.wide-chart {
+    grid-column: span 2;
+}
+
+.narrow-chart {
+    grid-column: span 1;
+}
+
+.card-header h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 0;
+    color: #000000;
+}
+
+.card-header p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.card-header b {
+    font-weight: 700;
+    color: wheat
+}
+
+/* --- Bar Chart Structure (Flexbox/Grid for Layout) --- */
+.chart-container {
+    display: flex;
+    flex-grow: 1;
+    height: 300px; /* Fixed chart height */
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 0.75rem;
+    color: var(--axis-color);
+    height: 100%;
+    margin-bottom: 25px; /* Space for X-axis labels */
+    flex-shrink: 0;
+}
+
+.bars-wrapper {
+    flex-grow: 1;
+    overflow-x: scroll; /* Allows horizontal scrolling for long charts */
+    padding-bottom: 15px; /* Space to prevent scrollbar overlap with X-axis */
+    position: relative;
+    width: 100%; 
+ 
+   
+}
+
+/* --- Grid Lines (Dashed Border effect) using CSS background-image --- */
+.bars-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 25px; /* Stop grid lines above X-axis labels */
+    /* Draw dashed lines at 25%, 50%, 75% intervals */
+    background-image: repeating-linear-gradient(to top, 
+        transparent, transparent 25%, var(--grid-color) 25%, var(--grid-color) 25.5%, transparent 25.5%, transparent 50%, 
+        var(--grid-color) 50%, var(--grid-color) 50.5%, transparent 50.5%, transparent 75%, 
+        var(--grid-color) 75%, var(--grid-color) 75.5%, transparent 75.5%, transparent 100%);
+    background-size: 100% 100%;
+    pointer-events: none;
+    z-index: 0;
+  
+}
+
+.bars {
+    display: flex;
+    align-items: flex-end;
+    /* Set explicit width for 24-bar charts to force scroll on small screens */
+    width: 2000px; 
+    height: 100%;
+    position: relative;
+    padding-left: 10px;
+   
+    z-index: 1;
+}
+
+/* Bar Styling */
+.bar {
+    width: 40px;
+    margin-right: 15px;
+    border-radius: 4px 4px 0 0;
+    transition: transform 0.2s ease;
+    min-height: 1px; 
+    flex-shrink: 0;
+}
+
+.bar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.emission-bar {
+    background-color: var(--primary-color-emissions);
+}
+
+.loss-bar {
+    background-color: var(--primary-color-loss);
+}
+
+/* X-Axis Styling */
+.x-axis {
+    display: flex;
+    width: 2000px; /* Must match .bars width */
+    font-size: 0.7rem;
+    color: var(--axis-color);
+    text-align: center;
+    padding-left: 10px;
+    position: absolute; 
+    bottom: 0;
+}
+
+.x-axis span {
+    width: 40px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+/* --- Stacked Bar Chart (Image 3) specific layout --- */
+.short-bars .bars {
+    width: 100%; /* Override 2000px width for 4-bar chart */
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.short-labels {
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.short-labels span {
+    width: 50px; 
+    margin-right: 0;
+}
+
+.stacked-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.stacked-bar {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden; 
+}
+
+.stacked-inner {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.dark-pink {
+    background-color: var(--secondary-color-loss);
+}
+
+.light-pink {
+    background-color: var(--primary-color-loss);
+}
+
+/* --- Ranked List (Image 4) --- */
+.ranked-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.rank-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--grid-color);
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.rank-item:hover {
+    background-color: #6e6767;
+}
+
+.rank-item:last-child {
+    border-bottom: none;
+}
+
+.rank-number {
+    background-color: var(--rank-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.district {
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.loss-ha {
+  font-weight: 600;
+  color: white;
+  font-size: 0.95rem;
+  transition: color 0.3s ease; /* Optional smooth hover effect */
+}
+
+
+
+/* Chart Legend (for Stacked Bar) */
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    margin-right: 6px;
+    flex-shrink: 0;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 800px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .wide-chart {
+        grid-column: span 1;
+    }
+    
+    .chart-container {
+        height: 250px;
+    }
+
+    .y-axis {
+        font-size: 0.65rem;
+    }
+    
+    .bars-wrapper::before {
+        bottom: 15px; /* Adjust grid height */
+    }
+
+    .x-axis {
+        width: 2000px; /* Keep fixed width for scrolling */
+        bottom: 0;
+    }
+}
+
+
+/* ===== Tooltip styling for bar hover ===== */
+.bar {
+  position: relative; /* Needed to position tooltip */
+  cursor: pointer;
+}
+
+/* Tooltip box */
+.bar::after {
+  content: attr(data-value); /* Uses data-value attribute from HTML */
+  position: absolute;
+  bottom: 100%; /* Show above the bar */
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 4px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Small triangle below tooltip */
+.bar::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(2px);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Show tooltip on hover */
+.bar:hover::after,
+.bar:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+}
