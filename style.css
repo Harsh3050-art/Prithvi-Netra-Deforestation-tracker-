@@ -99,7 +99,8 @@ section p {
   justify-content: center;
   gap: 100px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 50px;
+  
 }
 
 .images-row img {
@@ -705,6 +706,7 @@ body {
   transform: translateX(-50%) translateY(-10px);
 
 }
+
 
 
 
