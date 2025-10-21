@@ -29,7 +29,6 @@ A visually immersive website with video backgrounds, charts, and real data about
 | **HTML5** | Website structure |
 | **CSS3** | Styling and animations |
 | **JavaScript** | Interactivity |
-| **Chart.js** | Data visualization |
 | **Google Earth Engine** | Live satellite deforestation tracker |
 
 ---
