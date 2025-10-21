@@ -706,6 +706,41 @@ body {
   transform: translateX(-50%) translateY(-10px);
 
 }
+@media (max-width: 768px) {
+  .images-row {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .images-row img {
+    width: 90%;
+    height: auto;
+  }
+
+  .case-study-space {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cs {
+    width: 90%;
+    height: auto;
+  }
+
+  .case-study-space img {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  section {
+    margin: 10px;
+    padding: 20px;
+  }
+}
+
+
 
 
 
