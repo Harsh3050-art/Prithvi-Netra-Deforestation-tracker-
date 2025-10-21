@@ -318,16 +318,46 @@ section p {
 }
 
 @media (max-width: 768px) {
+  /* Stack all graphs vertically */
   .graphs-container {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
   }
+
+  /* Make charts fit smaller width */
+  .chart-card {
+    width: 100%;
+    padding: 15px;
+    min-height: auto;
+    box-sizing: border-box;
+  }
+
+  /* Adjust heading and text */
+  .chart-card h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .chart-card p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  /* Resize chart wrapper for small screens */
+  .chart-wrapper {
+    height: 280px;
+    width: 100%;
+    overflow-x: auto; /* Prevent overflow */
+  }
+
+  /* Fix spacing for wide/narrow charts */
   .wide-chart, .narrow-chart {
     grid-column: span 1;
-  }
-  .chart-wrapper {
-    height: 350px;
+    width: 100%;
   }
 }
+
 
 /* ================= BUTTON ================= */
 button, .cta-button {
@@ -804,6 +834,7 @@ body {
     max-width: 400px; /* optional cap to prevent too large */
   }
 }
+
 
 
 
