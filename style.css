@@ -834,101 +834,144 @@ body {
     max-width: 400px; /* optional cap to prevent too large */
   }
 }
-/* ================= SDG 15 – LIFE ON LAND SECTION ================= */
-/* ================= SDG 15 – LIFE ON LAND SECTION ================= */
-#sdg15 {
-  background: linear-gradient(180deg, #1b5e20, #2e2e2e); /* deep forest green to dark grey */
-  color: #f1f8e9;
-  padding: 50px;
-  margin: 40px auto;
+/* ================= SDG SECTION ================= */
+#sdgs {
+  background: linear-gradient(to bottom, #1f1f1f, #2b2b2b);
+  color: #e0e0e0;
+  padding: 50px 60px;
+  margin: 50px auto;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 255, 100, 0.2);
-  max-width: 1800px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 100, 0.1);
+  max-width: 1600px;
+  font-family: 'Poppins', sans-serif;
 }
 
-#sdg15:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 25px rgba(76, 175, 80, 0.4);
-}
-
-#sdg15 h2 {
+#sdgs h2 {
   text-align: center;
-  font-size: 2rem;
-  color: #c5ffb3;
-  margin-bottom: 25px;
-  text-shadow: 2px 2px 6px #000;
-}
-
-#sdg15 h3 {
   color: #a5d6a7;
-  margin-top: 35px;
-  font-size: 1.4rem;
-  text-shadow: 1px 1px 3px #000;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #2e7d32;
+  letter-spacing: 0.5px;
 }
 
 .sdg-intro {
-  font-size: 1.05rem;
-  color: #e0f2f1;
-  line-height: 1.8;
   text-align: center;
-  margin-bottom: 20px;
+  color: #ccc;
+  font-size: 1.05rem;
+  margin-bottom: 40px;
+  line-height: 1.7;
 }
 
-/* === SDG Table Styling === */
+/* Each SDG Block */
+.sdg-block {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #4caf50;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sdg-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
+}
+
+.sdg-block h3 {
+  color: #81c784;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #1b5e20;
+}
+
+.sdg-block p {
+  color: #dcdcdc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* === Table Styling === */
 .sdg-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 25px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  background-color: rgba(46, 46, 46, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.sdg-table thead {
+  background-color: #2e7d32;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .sdg-table th,
 .sdg-table td {
-  padding: 15px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 14px 18px;
   text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   vertical-align: top;
-  font-size: 0.95rem;
 }
 
 .sdg-table th {
-  background: rgba(76, 175, 80, 0.15);
-  color: #b9f6ca;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .sdg-table td {
-  color: #f1f8e9;
-  line-height: 1.6;
+  color: #e0e0e0;
+  font-size: 0.95rem;
 }
 
-.sdg-table tr:hover {
-  background: rgba(76, 175, 80, 0.12);
-  transition: background 0.3s ease;
+/* Hover effect for table rows */
+.sdg-table tbody tr:hover {
+  background-color: rgba(76, 175, 80, 0.15);
+  transition: background-color 0.3s ease;
 }
 
-/* === Responsive === */
-@media (max-width: 768px) {
-  #sdg15 {
+/* === Responsive Design === */
+@media (max-width: 900px) {
+  #sdgs {
     padding: 30px 20px;
   }
 
-  #sdg15 h2 {
-    font-size: 1.6rem;
+  #sdgs h2 {
+    font-size: 1.8rem;
   }
 
-  .sdg-table th,
-  .sdg-table td {
+  .sdg-block h3 {
+    font-size: 1.3rem;
+  }
+
+  .sdg-table th, .sdg-table td {
     font-size: 0.9rem;
-    padding: 12px;
+    padding: 10px 12px;
   }
 }
+
+@media (max-width: 600px) {
+  .sdg-table th, .sdg-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .sdg-table th {
+    background-color: #388e3c;
+    border-bottom: none;
+  }
+
+  .sdg-table tr {
+    margin-bottom: 12px;
+    display: block;
+  }
+}
+
+
 
 
 
