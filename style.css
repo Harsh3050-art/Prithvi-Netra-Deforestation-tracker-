@@ -834,6 +834,102 @@ body {
     max-width: 400px; /* optional cap to prevent too large */
   }
 }
+/* ================= SDG 15 – LIFE ON LAND SECTION ================= */
+#sdg15 {
+  background: linear-gradient(180deg, #1b5e20, #2e2e2e); /* deep forest green to dark grey */
+  color: #f1f8e9;
+  padding: 50px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 100, 0.2);
+  max-width: 1800px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sdg15:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(76, 175, 80, 0.4);
+}
+
+#sdg15 h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #c5ffb3;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 6px #000;
+}
+
+#sdg15 h3 {
+  color: #a5d6a7;
+  margin-top: 35px;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.sdg-intro {
+  font-size: 1.05rem;
+  color: #e0f2f1;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* === SDG Table Styling === */
+.sdg-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.sdg-table th,
+.sdg-table td {
+  padding: 15px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+
+.sdg-table th {
+  background: rgba(76, 175, 80, 0.15);
+  color: #b9f6ca;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.sdg-table td {
+  color: #f1f8e9;
+  line-height: 1.6;
+}
+
+.sdg-table tr:hover {
+  background: rgba(76, 175, 80, 0.12);
+  transition: background 0.3s ease;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  #sdg15 {
+    padding: 30px 20px;
+  }
+
+  #sdg15 h2 {
+    font-size: 1.6rem;
+  }
+
+  .sdg-table th,
+  .sdg-table td {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}
+
+
 
 
 
